@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.6.0/css/all.css" rel="stylesheet"/>
+    <link href="/css/tailwind-custom.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet"/>
+    <link href="/css/glide.core.min.css" rel="stylesheet"/>
+    <link href="/css/glide.theme.min.css" rel="stylesheet"/>
+    <script src="/js/glide.min.js"></script>
+    <script src="/js/tailwindcss.js"></script>
+    <script src="/js/tailwind-config.min.js" data-color="#000000" data-border-radius="small"></script>
+    <title>SSL证书销售平台</title>
+</head>
+<body>
+<div class="min-h-screen bg-gray-50">
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <span class="text-2xl  text-custom">ALAPI</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-700 hover:text-custom">首页</a>
+                    <a href="#ssl-lx" class="text-gray-700 hover:text-custom">证书类型</a>
+                    <a href="#ssl-buy" class="text-gray-700 hover:text-custom">购买流程</a>
+                    <a href="#ssl-pj" class="text-gray-700 hover:text-custom">客户评价</a>
+                    <a href="#ssl-question" class="text-gray-700 hover:text-custom">常见问题</a>
+                    <a href="https://kfurl.cn/ssl">
+                        <button class="bg-custom text-white px-6 py-2 !rounded-button">联系我们</button>
+                    </a>
+                </div>
+                <button class="md:hidden text-gray-700" id="mobile-menu-button"><i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4 mt-4"><a href="#" class="text-gray-700 hover:text-custom">首页</a><a
+                        href="#ssl-lx" class="text-gray-700 hover:text-custom">证书类型</a><a href="#ssl-buy"
+                                                                                              class="text-gray-700 hover:text-custom">购买流程</a><a
+                        href="#ssl-pj" class="text-gray-700 hover:text-custom">客户评价</a><a href="#ssl-question"
+                                                                                              class="text-gray-700 hover:text-custom">常见问题</a>
+                    <a href="https://kfurl.cn/ssl">
+                        <button class="bg-custom text-white px-6 py-2 !rounded-button w-full">联系我们</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="bg-custom">
+        <div class="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+            <div class="text-center text-white">
+                <h1 class="text-4xl font-bold mb-4">SSL证书专业销售平台</h1>
+                <p class="text-xl mb-8">为您的网站提供安全可靠的SSL证书解决方案</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button class="bg-white text-custom px-8 py-3 font-semibold !rounded-button">立即选购</button>
+                    <button class="border-2 border-white text-white px-8 py-3 font-semibold !rounded-button">了解更多
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto px-6 py-16" id="ssl-lx">
+        <h2 class="text-3xl font-bold text-center mb-12">SSL证书类型</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="/img/cer.svg"
+                     alt="DV证书" class="w-30 h-30 mx-auto mb-4"/>
+                <p class="mb-2">证书品牌： <span class="font-bold">Certum</span></p>
+                <p class="mb-2">证书类型： <span class="font-bold">DV 单域版</span></p>
+                <p class="mb-2">公钥算法： <span class="font-bold">RSA</span></p>
+                <p class="mb-2">公钥长度： <span class="font-bold">RSA (2048 以上)</span></p>
+                <p class="mb-2">加密强度： <span class="font-bold">支持高达 256 位</span></p>
+                <p class="mb-2">颁发周期： <span class="font-bold">最快2分钟</span></p>
+                <p class="mb-2">证书有效： <span class="font-bold">13个月</span></p>
+                <p class="mb-2">退款期限： <span class="font-bold">签发日起7天</span></p>
+                <a href="https://kfurl.cn/ssl">
+                    <button class="w-full bg-custom text-white py-2 !rounded-button">立即购买 ￥30/年</button>
+                </a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="/img/cer.svg"
+                     alt="DV证书" class="w-30 h-30 mx-auto mb-4"/>
+                <p class="mb-2">证书品牌： <span class="font-bold">Certum</span></p>
+                <p class="mb-2">证书类型： <span class="font-bold">DV 通配符</span></p>
+                <p class="mb-2">公钥算法： <span class="font-bold">RSA</span></p>
+                <p class="mb-2">公钥长度： <span class="font-bold">RSA (2048 以上)</span></p>
+                <p class="mb-2">加密强度： <span class="font-bold">支持高达 256 位</span></p>
+                <p class="mb-2">颁发周期： <span class="font-bold">最快2分钟</span></p>
+                <p class="mb-2">证书有效： <span class="font-bold">13个月</span></p>
+                <p class="mb-2">退款期限： <span class="font-bold">签发日起7天</span></p>
+                <a href="https://kfurl.cn/ssl">
+                    <button class="w-full bg-custom text-white py-2 !rounded-button">立即购买 ￥238/年</button>
+                </a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="/img/cer.svg"
+                     alt="DV证书" class="w-30 h-30 mx-auto mb-4"/>
+                <p class="mb-2">证书品牌： <span class="font-bold">Certum</span></p>
+                <p class="mb-2">证书类型： <span class="font-bold">公网IP证书</span></p>
+                <p class="mb-2">公钥算法： <span class="font-bold">RSA</span></p>
+                <p class="mb-2">公钥长度： <span class="font-bold">RSA (2048 以上)</span></p>
+                <p class="mb-2">加密强度： <span class="font-bold">支持高达 256 位</span></p>
+                <p class="mb-2">颁发周期： <span class="font-bold">最快2分钟</span></p>
+                <p class="mb-2">证书有效： <span class="font-bold">13个月</span></p>
+                <p class="mb-2">退款期限： <span class="font-bold">签发日起7天</span></p>
+                <a href="https://kfurl.cn/ssl">
+                    <button class="w-full bg-custom text-white py-2 !rounded-button">立即购买 ￥30/年</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="bg-gray-100 py-16" id="ssl-buy">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">购买流程</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 justify-items-center">
+                <div class="flex flex-col items-center w-48">
+                    <div class="w-16 h-16 bg-custom rounded-full flex items-center justify-center text-white text-xl mb-4">
+                        1
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">选择证书</h3>
+                    <p class="text-gray-600 text-center">根据需求选择合适的SSL证书类型</p>
+                </div>
+                <div class="flex flex-col items-center w-48">
+                    <div class="w-16 h-16 bg-custom rounded-full flex items-center justify-center text-white text-xl mb-4">
+                        2
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">提交订单</h3>
+                    <p class="text-gray-600 text-center">填写域名信息完成支付</p>
+                </div>
+                <div class="flex flex-col items-center w-48">
+                    <div class="w-16 h-16 bg-custom rounded-full flex items-center justify-center text-white text-xl mb-4">
+                        3
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">域名验证</h3>
+                    <p class="text-gray-600 text-center">按要求完成域名所有权验证</p>
+                </div>
+                <div class="flex flex-col items-center w-48">
+                    <div class="w-16 h-16 bg-custom rounded-full flex items-center justify-center text-white text-xl mb-4">
+                        4
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">证书签发</h3>
+                    <p class="text-gray-600 text-center">CA机构审核通过后签发证书</p>
+                </div>
+                <div class="flex flex-col items-center w-48">
+                    <div class="w-16 h-16 bg-custom rounded-full flex items-center justify-center text-white text-xl mb-4">
+                        5
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">完成部署</h3>
+                    <p class="text-gray-600 text-center">安装证书并完成HTTPS配置</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto px-6 py-16" id="ssl-pj">
+        <h2 class="text-3xl font-bold text-center mb-12">客户评价</h2>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <div class="bg-white p-6 rounded-lg shadow-lg mx-4">
+                            <div class="flex items-center mb-4">
+                                <img src="/img/avatar.png"
+                                     alt="客户头像" class="w-12 h-12 rounded-full mr-4"/>
+                                <div>
+                                    <h4 class="font-semibold">陈总监</h4>
+                                    <p class="text-gray-500">某知名电商平台</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600">
+                                证书申请流程非常顺畅，技术支持响应及时，解决了我们的难题。强烈推荐！</p>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="bg-white p-6 rounded-lg shadow-lg mx-4">
+                            <div class="flex items-center mb-4">
+                                <img src="/img/avatar.png"
+                                     alt="客户头像" class="w-12 h-12 rounded-full mr-4"/>
+                                <div>
+                                    <h4 class="font-semibold">李经理</h4>
+                                    <p class="text-gray-500">某金融科技公司</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600">价格实惠，服务专业，帮助我们快速完成了全站HTTPS部署，非常满意！</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-100 py-16" id="ssl-question">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">常见问题</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-4">
+                    <button class="w-full bg-white p-4 text-left rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
+                            onclick="this.nextElementSibling.classList.toggle(&#39;hidden&#39;)">
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">SSL证书有什么用？</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </button>
+                    <div class="hidden bg-white mt-2 p-4 rounded-lg">
+                        SSL证书可以加密网站与用户之间的数据传输，保护用户信息安全，提升网站可信度，并且能够提高搜索引擎排名。
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <button class="w-full bg-white p-4 text-left rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"
+                            onclick="this.nextElementSibling.classList.toggle(&#39;hidden&#39;)">
+                        <div class="flex justify-between items-center">
+                            <span class="font-semibold">如何选择合适的SSL证书？</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </button>
+                    <div class="hidden bg-white mt-2 p-4 rounded-lg">
+                        根据您的网站类型和安全需求选择：个人网站选择DV证书，企业网站选择OV证书，金融类网站建议选择EV证书。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">联系我们</h3>
+                    <p class="mb-2">客服热线：400-888-8888</p>
+                    <p class="mb-2">邮箱：im@alapi.cn</p>
+                    <p>工作时间：9:00-18:00</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">快速链接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://kfurl.cn/ssl" class="hover:text-custom">证书价格</a></li>
+                        <li><a href="https://kfurl.cn/ssl" class="hover:text-custom">技术支持</a></li>
+                        <li><a href="https://kfurl.cn/ssl" class="hover:text-custom">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">关注我们</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://kfurl.cn/ssl" class="hover:text-custom"><i class="fab fa-weixin text-2xl"></i></a>
+                        <a href="https://kfurl.cn/ssl" class="hover:text-custom"><i
+                                class="fab fa-weibo text-2xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">扫码关注</h3>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p>© 2025 SSL证书销售平台. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+  document.getElementById('mobile-menu-button').addEventListener('click', function () {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+  new Glide('.glide', {
+    type: 'carousel',
+    perView: 2,
+    gap: 32,
+    autoplay: 3000,
+    breakpoints: {
+      768: {
+        perView: 1
+      }
+    }
+  }).mount();
+</script>
+
+</body>
+</html>
