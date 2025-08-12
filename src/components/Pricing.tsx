@@ -5,7 +5,7 @@ export function Pricing() {
   const plans = [
     {
       title: "DV 单域版",
-      price: "20",
+      price: "40",
       features: [
         "域名验证",
         "256位加密",
@@ -17,7 +17,7 @@ export function Pricing() {
     },
     {
       title: "DV 通配符",
-      price: "200",
+      price: "260",
       features: [
         "域名验证",
         "256位加密",
@@ -30,7 +30,7 @@ export function Pricing() {
     },
     {
       title: "IP证书",
-      price: "20",
+      price: "40",
       features: [
         "域名验证",
         "256位加密",
